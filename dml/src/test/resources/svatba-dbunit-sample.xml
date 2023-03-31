@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+    <users id="1" name="Jan XXXXXX" phone="+420XXXXXXXXX" email="X.XXX@centrum.cz" login="hejda" password="chinaski"/>
+    <users id="2" name="Zuzana XXXXXX" phone="+420XXXXXXXXX" email="XXXXXXX@seznam.cz" login="zuzka" password="rila"/>
+    <users id="3" name="Ladislav XXXXXXX" phone="+420XXXXXXXXX" email="XXXXXXX@email.cz"/>
+    <gifts id="1" id_user="3" title="Hodina zpěvu" descrip="Svěrák nespí na ponku a Uhlíř topí dřevem" link="http://hodinazpevu.cz" price="345" thumb="/9j/4AA"/>
+    <gifts id="2" id_user="2" title="Hodina zpěvu 2" descrip="Barbora z tábora" link="http://hodinazpevu.cz" price="345" thumb="/9j/4AAQ"/>
+    <gifts id="3" id_user="3" title="Hrnec na těstoviny" descrip="S cedníkem pro snadné slévání" link="http://hrnec.tescoma.cz" price="1295" thumb="/9j/4"/>
+    <gifts id="4" title="Cyklopumpa" descrip="Ale pořádná" link="http://pump.evans.co.uk" price="833" thumb="/9j/4AAQSk"/>
+</dataset>

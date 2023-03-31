@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="jpaPropertyMap">
+        <entry key="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+    </util:map>
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="showSql" value="true"/>
+        <property name="generateDdl" value="true"/>
+        <property name="database" value="H2"/>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <property name="url" value="jdbc:h2:test"/>
+        <!-- <property name="url" value="jdbc:h2:mem:"/> fiks join tables are not created for some unknown reason-->
+        <!-- <property name="url" value="jdbc:h2:mem:test;MODE=Mysql"/> fiks this doesn't help either -->
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
+</beans>

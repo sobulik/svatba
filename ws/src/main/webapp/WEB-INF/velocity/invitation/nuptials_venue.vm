@@ -1,0 +1,36 @@
+#set($screen_sidebar = "invitation/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Kdy a kde</a></h2>
+                                <div class="entry">
+                                    <p>Datum: 15. června 2013</p>
+                                    <p>Čas: 14.00</p>
+                                </div>
+                                <h2 class="title"><a href="#">Manévry</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        Konvoj s hlavními aktéry a místními má sraz ve 12.00 u nás v Pasekách a odjíždí ve 12.30. Nemalá část hostů ovšem pojede z Prahy a okolí a ačkoli to nezakazujeme,
+                                        je zbytečné aby zajížděla až do Jablonce. Pro ty je uspořádán alternativní sraz na autobusové zastávce u&nbsp;Paceřic. Jak je z <a href="$request.contextPath/invitation/nuptials_directions">mapy</a> vidět,
+                                        tato se nachází bezprostředně za výjezdem z rychlostní silnice Turnov - Liberec (Exit 41).
+                                        Tam bude sraz ve 12.30 a na místě bude čekat Hanka s&nbsp;Natálkou, které vám pomohou ozdobit sebe a vaše plechovky. V momentě kdy Hanka dostane signál o blížícím se jabloneckém konvoji,
+                                        pražský konvoj se uvede do pohybu a setká se s jabloneckým.
+                                    </p>
+                                </div>
+                                <div class="entry">
+                                    <p>
+                                        Tyhle manévry si víceméně vyžádali sychrovští, neboť připouštějí pouze hromadný příjezd všech svatebčanů. Kdo z jakýchkoli příčin nedorazí včas ani na jeden sraz,
+                                        je odkázán dobýt zámek na vlastní pěst, což znamená být odtržen od houfu a zaplatit si parkovné.
+                                    </p>
+                                </div>
+                                <h2 class="title"><a href="#">Obřadní místo</a></h2>
+                                <div class="entry">
+                                    <h4>Suchá varianta</h4>
+                                    <p>zahrada zámku Sychrov</p>
+                                    <h4>Mokrá varianta</h4>
+                                    <p>zámek Sychrov - Alainův sál</p>
+                                    <p>
+                                        Místo konání je závislé na rozmarech počasí a sychrovských. Ani jedni nám situaci neulehčují.
+                                        <strong>Moc to nechápeme, ale je možné, že úřední šiml bude trvat na venkovní svatbě i za deště, takže deštníky rozhodně s sebou.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

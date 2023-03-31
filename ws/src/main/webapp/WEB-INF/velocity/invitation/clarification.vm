@@ -1,0 +1,15 @@
+#set($screen_sidebar = "invitation/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#"></a></h2>
+                                <div class="entry">
+                                    <p>
+                                        Většina zvaných hostů obdrží pozvánku písemně.
+                                        Ostatní nějakou jinou, neméně explicitní formou.
+                                        Informace v této sekci jsou její rozšíření, které by mělo být vždy aktuální.
+                                    </p>
+                                    <p>
+                                        Všechny pozvánky platí na obřad i na následnou veselici.
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

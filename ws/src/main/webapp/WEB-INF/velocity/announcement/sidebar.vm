@@ -1,0 +1,12 @@
+<ul>
+                                <li>
+                                    <h2>#springMessage("announcement.sidebar.caption.message")</h2>
+                                    <ul>
+                                        <li><a href="$request.contextPath/announcement/introduction">#springMessage("announcement.sidebar.caption.intro")</a></li>
+                                        <li><a href="$request.contextPath/announcement/message">#springMessage("announcement.sidebar.caption.message")</a></li>
+                                        #if ($response.locale == "cs_CZ")
+                                            <li><a href="$request.contextPath/announcement/poetry">Co na to říká klasik</a></li>
+                                        #end
+                                    </ul>
+                                </li>
+                            </ul>

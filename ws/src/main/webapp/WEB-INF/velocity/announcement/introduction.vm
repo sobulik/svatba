@@ -1,0 +1,23 @@
+#set($screen_sidebar = "announcement/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">#springMessage("announcement.intro.title")</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        #springMessage("announcement.intro.common")
+                                    </p>
+                                    <ul>
+                                        <li>#springMessage("announcement.intro.skis")</li>
+                                        <li>#springMessage("announcement.intro.cooker")</li>
+                                        <li>#springMessage("announcement.intro.child")</li>
+                                        <li>#springMessage("announcement.intro.shoesize")</li>
+                                        <li>#springMessage("announcement.intro.land")</li>
+                                    </ul>
+                                    <p>
+                                        #springMessage("announcement.intro.decision")
+                                    </p>
+                                    <p>
+                                        <a href="$request.contextPath/announcement/message">#springMessage("announcement.intro.continue")</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

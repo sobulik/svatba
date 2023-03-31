@@ -1,0 +1,30 @@
+#set($screen_sidebar = "bestmanzone/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">$gift.title</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        #if ($gift.user)
+                                            Tento dar si zamluvil/a $gift.user.name.
+                                        #else
+                                            Tento dar není zamluvený.
+                                        #end
+                                    </p>
+                                    <p>
+                                        <form method="post" action="$request.contextPath/bestmanzone/gift/$gift.id">
+                                            <input type="hidden" name="_method" value="PUT"/>
+                                            <select name="select_user">
+                                                <option value="0">nikdo</option>
+                                                #foreach($user in $users)
+                                                    #if ($user.id == $gift.user.id)
+                                                        <option value="$user.id" selected="selected">$user.name</option>
+                                                    #else
+                                                        <option value="$user.id">$user.name</option>
+                                                    #end
+                                                #end
+                                            </select>
+                                            <input class="button" type="submit" value="Ok"/>
+                                        </form>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

@@ -1,0 +1,20 @@
+#set($screen_sidebar = "announcement/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#"></a></h2>
+                                <div class="entry">
+                                    <p class="poem poem-caption">
+                                        Břízky<br/>
+                                        Jan Vařecha
+                                    </p>
+                                    <p class="poem">
+                                        Tam za vesničkou na stráni,<br/>
+                                        břízka se k břízce naklání.<br/>
+                                        Přiviň se ke mně má milá,<br/>
+                                        jako ta břízka spanilá.<br/>
+                                    </p>
+                                    <p class="poem">
+                                        <a href="http://www.youtube.com/watch?v=-G1Z8aJYb7U" target="_blank">V originále</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

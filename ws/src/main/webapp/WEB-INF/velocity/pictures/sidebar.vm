@@ -1,0 +1,5 @@
+<ul>
+                                <li>
+                                    <h2>#springMessage("pictures.sidebar.caption.links")</h2>
+                                </li>
+                            </ul>

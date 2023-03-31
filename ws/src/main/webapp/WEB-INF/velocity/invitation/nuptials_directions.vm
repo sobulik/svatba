@@ -1,0 +1,17 @@
+#set($screen_sidebar = "invitation/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Jak se tam jede</a></h2>
+                                <div class="entry">
+                                    <p>Místo srazu pražského konvoje.</p>
+                                    <p>
+                                        <iframe src="http://api4.mapy.cz/frame?url=http%3A%2F%2Fmapy.cz%2Fs%2F7sQt&amp;z=15&amp;x=15.110598082508996&amp;y=50.618852108406884&amp;o=0&amp;layer=15&amp;dx=15.110598082508996&amp;dy=50.618852108406884&amp;dt=50%C2%B037'7.867%26quot%3BN%2C%2015%C2%B06'38.152%26quot%3BE&amp;move=1&amp;prev=1&amp;w=500&amp;h=333" width="500" height="333" style="border:none" frameBorder="0"></iframe>
+                                    </p>
+                                </div>
+                                <div class="entry">
+                                    <p>Obec a zámek Sychrov se nacházejí nedaleko rychlostní silnice spojující Turnov a Liberec.</p>
+                                    <p>
+                                        <iframe src="http://api4.mapy.cz/frame?url=http%3A%2F%2Fmapy.cz%2Fs%2F6Lsp&amp;z=12&amp;x=15.08936385836062&amp;y=50.62573711395127&amp;o=0&amp;layer=14&amp;dx=15.08936385836062&amp;dy=50.62573711395127&amp;dt=Sychrov&amp;move=1&amp;prev=1&amp;w=500&amp;h=333" width="500" height="333" style="border:none" frameBorder="0"></iframe>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

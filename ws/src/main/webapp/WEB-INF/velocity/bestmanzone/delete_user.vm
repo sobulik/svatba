@@ -1,0 +1,25 @@
+#set($screen_sidebar = "bestmanzone/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Smazat dárce</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        #if ($user.gifts.size() == 0)
+                                            Opravdu smazat?
+                                            <form method="post" action="$request.contextPath/bestmanzone/delete_user/$user.id">
+                                                <input type="hidden" name="_method" value="DELETE"/>
+                                                <input class="button" type="submit" value="Smazat"/>
+                                            </form>
+                                        #else
+                                            Dárce nemůže být smazán, protože má zamluvené následující dary:
+                                            <ul>
+                                            #foreach($gift in $user.gifts)
+                                            <li>
+                                                <p><a href="#springUrl("/bestmanzone/gift/$gift.id")">$gift.title</a></p>
+                                            </li>
+                                            #end
+                                            </ul>
+                                        #end
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

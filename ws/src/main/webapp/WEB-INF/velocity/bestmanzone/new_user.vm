@@ -1,0 +1,29 @@
+#set($screen_sidebar = "bestmanzone/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Dárci</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        <form method="post" action="$request.contextPath/bestmanzone/new_user">
+                                            <table class="noborder">
+                                                <tr>
+                                                    <td>Jméno:</td>
+                                                    <td><input type="text" name="name"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Telefon:</td>
+                                                    <td><input type="text" name="phone"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email:</td>
+                                                    <td><input type="text" name="email"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><input class="button" type="submit" value="Přidat"/></td>
+                                                </tr>
+                                            </table>
+                                        </form>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

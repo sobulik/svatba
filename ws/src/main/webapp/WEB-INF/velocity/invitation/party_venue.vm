@@ -1,0 +1,12 @@
+#set($screen_sidebar = "invitation/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Kdy a kde</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        Po obřadu a focení se všichni společně přesuneme do objektu v Horní Černé Studnici č. 61.
+                                        Kdo má obavy že netrefí, ať neopouští kolonu.
+                                        Příjezd je předpokládán okolo 16. hodiny.
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

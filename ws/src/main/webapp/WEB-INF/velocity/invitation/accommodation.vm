@@ -1,0 +1,12 @@
+#set($screen_sidebar = "invitation/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#"></a></h2>
+                                <div class="entry">
+                                    <p>
+                                        Chata v Horní Černé Studnici je pronajatá od pátku do neděle a skýtá možnost ubytování.
+                                        Po předchozí domluvě a při volné kapacitě je možno strávit zde celý víkend a trochu poznat okolí.
+                                        Kdyby na to došlo, místa pro stany je habaděj.
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

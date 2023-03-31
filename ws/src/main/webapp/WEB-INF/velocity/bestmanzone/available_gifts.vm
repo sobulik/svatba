@@ -1,0 +1,14 @@
+#set($screen_sidebar = "bestmanzone/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Volné dary</a></h2>
+                                <div class="entry">
+                                    <ul>
+                                        #foreach($gift in $gifts)
+                                            <li>
+                                                <p><a href="#springUrl("/bestmanzone/gift/$gift.id")">$gift.title</a></p>
+                                            </li>
+                                        #end
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

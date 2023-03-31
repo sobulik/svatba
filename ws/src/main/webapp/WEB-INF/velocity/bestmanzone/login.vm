@@ -1,0 +1,17 @@
+#set($screen_sidebar = "bestmanzone/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Nejdřív se přihlaš</a></h2>
+                                <div class="entry">
+                                    #if ($request.getParameter("fail") == 1)
+                                        <p id="failedlogin">Zkus to jinak</p>
+                                    #end
+                                    <form name='login' action='/svatba/j_spring_security_check' method='POST'>
+                                        <table class="noborder">
+                                            <tr><td>Login:</td><td><input type='text' name='j_username' value=''></td></tr>
+                                            <tr><td>Heslo:</td><td><input type='password' name='j_password'/></td></tr>
+                                            <tr><td colspan='2'><input name="submit" type="submit" value="Login"/></td></tr>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

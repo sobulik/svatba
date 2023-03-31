@@ -1,0 +1,14 @@
+#set($screen_sidebar = "pictures/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">#springMessage("pictures.sidebar.caption.links")</a></h2>
+                                <div class="entry">
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <a href="http://gallery.lubosovo.net/index.php/Svatba/Historie" target="_blank">#springMessage("pictures.links.before")</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

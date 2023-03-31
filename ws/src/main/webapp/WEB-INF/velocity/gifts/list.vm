@@ -1,0 +1,23 @@
+#set($screen_sidebar = "gifts/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Dary</a></h2>
+                                <div class="entry">
+                                    <ul class="gifts">
+                                        #foreach($gift in $gifts)
+                                            #if ($gift.user)
+                                            <li class="taken">
+                                                <p class="caption">$gift.title - <span class="taken">Zamluven</span></p>
+                                            #else
+                                            <li>
+                                                <p class="caption">$gift.title - <span class="free">Volný</span></p>
+                                            #end
+                                                <p>$gift.descrip</p>
+                                                <p>Pořídit lze např. <a href="$gift.link">zde</a></p>
+                                                <p>Orientační cena: $gift.price Kč</p>
+                                                <hr/>
+                                            </li>
+                                        #end
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

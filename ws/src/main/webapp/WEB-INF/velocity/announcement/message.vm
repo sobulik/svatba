@@ -1,0 +1,25 @@
+#set($screen_sidebar = "announcement/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">#springMessage("announcement.message.title")</a></h2>
+                                <div class="entry">
+                                    <div class="vspace"></div>
+                                    <p class="center bold">
+                                        Jana Vozáková
+                                    </p>
+                                    <p class="center bold">
+                                        #springMessage("announcement.message.and")
+                                    </p>
+                                    <p class="center bold">
+                                        Luboš Tomášek
+                                    </p>
+                                    </p>
+                                    <p class="center bold">
+                                        #springMessage("announcement.message.announce")
+                                    </p>
+                                    <p class="center bold">
+                                        #springMessage("announcement.message.when")
+                                        #springMessage("announcement.message.where")
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

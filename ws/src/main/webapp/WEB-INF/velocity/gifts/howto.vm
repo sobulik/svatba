@@ -1,0 +1,21 @@
+#set($screen_sidebar = "gifts/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Jak na to</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        Postup je následující:
+                                        <ol>
+                                            <li>
+                                                V <a href="$request.contextPath/gifts/list">seznamu</a> vyberte nějakou volnou věc.
+                                            </li>
+                                            <li>
+                                                Zavolejte sl. Zuzaně XXXXXX, svědkyni nevěsty, na číslo XXX XXX XXX.
+                                            </li>
+                                            <li>
+                                                Sdělte jí své jméno, telefon, příp. email a hlavně své rozhodnutí. Po jejím potvrzení máte dar zamluvený.
+                                            </li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

@@ -1,0 +1,12 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+        version="2.0">
+
+    <persistence-unit name="svatbaPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <description>Persistence unit for svatba database</description>
+        <!-- includes all @Entity annotated classes by default -->
+        <!-- needs to be listed explicitly if more than one persistence unit is used -->
+        <!--<class>net.lubosovo.svatba.repository.domain.Gift</class>-->
+    </persistence-unit>
+</persistence>

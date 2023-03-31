@@ -1,0 +1,24 @@
+<ul>
+                                #if ($principal)
+                                <li>
+                                    <h2>Správce: $principal.name</h2>
+                                    <ul>
+                                        <li><a href="$request.contextPath/j_spring_security_logout">Odhlásit se</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Dary</h2>
+                                    <ul>
+                                        <li><a href="$request.contextPath/bestmanzone/gifts">Všechny</a></li>
+                                        <li><a href="$request.contextPath/bestmanzone/available_gifts">Volné</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Dárci</h2>
+                                    <ul>
+                                        <li><a href="$request.contextPath/bestmanzone/users">Dárci</a></li>
+                                        <li><a href="$request.contextPath/bestmanzone/new_user">Nový</a></li>
+                                    </ul>
+                                </li>
+                                #end
+                            </ul>

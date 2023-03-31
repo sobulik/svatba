@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="net.lubosovo.svatba.repository" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>
+    <context:component-scan base-package="net.lubosovo.svatba.service" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="svatbaPersistenceUnit"/>
+        <property name="jpaPropertyMap" ref="jpaPropertyMap"/>
+        <property name="jpaDialect" ref="jpaDialect"/>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <util:map id="jpaPropertyMap">
+        <entry key="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+        <!--
+        <entry key="hibernate.connection.useUnicode" value="true"/>
+        <entry key="hibernate.connection.characterEncoding" value="UTF-8"/>
+        <entry key="hibernate.connection.charSet" value="UTF-8"/>
+        -->
+        <!--
+        <entry key="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+        <entry key="hibernate.connection.pool_size" value="10"/>
+        <entry key="hibernate.connection.release_mode" value="auto"/>
+        <entry key="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
+        -->
+    </util:map>
+    <bean id="jpaDialect" class="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="showSql" value="false"/>
+        <property name="generateDdl" value="false"/>
+        <property name="database" value="MYSQL"/>
+    </bean>
+    <beans profile="default,production">
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/svatba_lubosovo_net?useUnicode=true&amp;characterEncoding=utf-8"/>
+            <property name="username" value="svatba_lubosovo_"/>
+            <property name="password" value="agf*fGIe"/>
+        </bean>
+    </beans>
+    <beans profile="dev">
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/svatba_lubosovo_net?useUnicode=true&amp;characterEncoding=utf-8"/>
+            <property name="username" value="svatba_lubosovo_"/>
+            <property name="password" value="agf*fGIe"/>
+        </bean>
+    </beans>
+</beans>

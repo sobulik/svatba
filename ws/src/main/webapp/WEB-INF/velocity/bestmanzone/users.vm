@@ -1,0 +1,25 @@
+#set($screen_sidebar = "bestmanzone/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Dárci</a></h2>
+                                <div class="entry">
+                                    <table>
+                                        <tr>
+                                            <th>Jméno</th>
+                                            <th>Telefon</th>
+                                            <th>Email</th>
+                                            <th>Upravit</th>
+                                            <th>Smazat</th>
+                                        </tr>
+                                        #foreach($user in $users)
+                                            <tr>
+                                                <td>$user.name</td>
+                                                <td>$user.phone</td>
+                                                <td>$user.email</td>
+                                                <td>Zatim nende fiks</td>
+                                                <td><a href="#springUrl("/bestmanzone/delete_user/$user.id")">Smazat</a></td>
+                                            </tr>
+                                        #end
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

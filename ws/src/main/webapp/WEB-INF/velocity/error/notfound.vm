@@ -1,0 +1,7 @@
+#set($screen_sidebar = "error/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Page not found</a></h2>
+                                <div class="entry">
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

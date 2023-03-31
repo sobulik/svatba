@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head profile="http://www.w3.org/2005/10/profile">
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+        <title>#springMessage("logo.title")</title>
+        <link href="$request.contextPath/resources/css/interchange.css" rel="stylesheet" type="text/css" media="screen"/>
+        <link rel="shortcut icon" href="$request.contextPath/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="$request.contextPath/favicon.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <h1>#springMessage("logo.title")</h1>
+                    <!--<p>#springMessage("logo.subtitle")</p>-->
+                </div>
+            </div>
+            <div id="locale">
+                #if ($response.locale == "en_GB")
+                    <a href="?locale=cs_CZ"><img src="$request.contextPath/resources/images/cz.png" alt="Czech flag"/>Česky</a>
+                #else
+                    <a href="?locale=en_GB"><img src="$request.contextPath/resources/images/gb.png" alt="British flag"/>English</a>
+                #end
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item fiks"><a href="#springUrl("/announcement")">#springMessage("menu.announcement")</a></li>
+                    <li><a href="$request.contextPath/invitation">#springMessage("menu.invitation") #if ($response.locale != "cs_CZ") <img src="$request.contextPath/resources/images/cz.png" alt="Czech flag"/> #end</a></li>
+                    <li><a href="#springUrl("/gifts")">#springMessage("menu.gifts") #if ($response.locale != "cs_CZ") <img src="$request.contextPath/resources/images/cz.png" alt="Czech flag"/> #end</a></li>
+                    <li><a href="#springUrl("/bestmanzone")">#springMessage("menu.bestmanzone") #if ($response.locale != "cs_CZ") <img src="$request.contextPath/resources/images/cz.png" alt="Czech flag"/> #end</a></li>
+                    <li><a href="#springUrl("/pictures")">#springMessage("menu.pictures")</a></li>
+                </ul>
+            </div>
+            <div id="page">
+                <div id="page-bgtop">
+                    <div id="page-bgbtm">
+                        <div id="sidebar">
+                            #parse($screen_sidebar)
+                        </div>
+                        <div id="content">
+                            $screen_content
+                        </div>
+                        <div style="clear: both;">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Design based on <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+        </div>
+    </body>
+</html>

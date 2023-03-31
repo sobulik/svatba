@@ -1,0 +1,15 @@
+<ul>
+                                <li>
+                                    <h2>Nic nepotřebujem</h2>
+                                    <ul>
+                                        <li><a href="$request.contextPath/gifts/disclaimer">Opravdu ne</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Když si nedáte říci</h2>
+                                    <ul>
+                                        <li><a href="$request.contextPath/gifts/howto">Jak na to</a></li>
+                                        <li><a href="$request.contextPath/gifts/list">Seznam</a></li>
+                                    </ul>
+                                </li>
+                            </ul>

@@ -1,0 +1,20 @@
+#set($screen_sidebar = "gifts/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Všechno máme</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        Máme všechno co je pro život důležité.
+                                        Víc nepotřebujem.
+                                    </p>
+                                    <p>
+                                        Přesto tušíme, že se ve vašich řadách najdou tací, kteří budou trpět nutkavou touhou nás něčím obdarovat.
+                                        Abychom vám ulehčili výběr a sobě starosti typu "Co s poukazem na adrenalinový zážitek",
+                                        dovolili jsme si sepsat <a href="$request.contextPath/gifts/list">seznam</a> pro inspiraci.
+                                    </p>
+                                    <p>
+                                        Ještě jednou zdůrazňujeme, že se nebereme kvůli darům, natož aby se staly jakousi vstupenkou na svatbu.
+                                        Originalitě se meze nekladou, seznam je pro tápající.
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>

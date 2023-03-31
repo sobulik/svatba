@@ -1,0 +1,13 @@
+#set($screen_sidebar = "invitation/sidebar.vm")
+<div class="post">
+                                <h2 class="title"><a href="#">Jak se tam jede</a></h2>
+                                <div class="entry">
+                                    <p>
+                                        V sedle v Dolní Černé Studnici odbočte na Horní Černou Studnici. Poté co minete odbočku na vrchol zbystřete. Chalupa je na pravé straně silnice, parkoviště o cca 50m dál po levé straně.
+                                    </p>
+                                    <p>
+                                        <iframe src="http://api4.mapy.cz/frame?url=http%3A%2F%2Fmapy.cz%2Fs%2F6LsK&amp;z=15&amp;x=15.220571184663909&amp;y=50.71191393686037&amp;o=0&amp;layer=14&amp;dx=15.220571184663909&amp;dy=50.71191393686037&amp;dt=Horn%C3%AD%20%C4%8Cern%C3%A1%20Studnice%20%C4%8D.p.%2061&amp;move=1&amp;prev=1&amp;w=500&amp;h=333" width="500" height="333" style="border:none" frameBorder="0"></iframe>
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>
